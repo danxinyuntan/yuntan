@@ -3,38 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="./pic 8.png">
+    <title>關於我們 - 雲壇</title>
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <style>
+        /* 新增样式
+        .intro-section {
+            padding: 3rem 0;
+        }
+        
+        .intro-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .intro-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .intro-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .card-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .history-timeline {
+            margin-top: 3rem;
+        }
+        
+        .founder-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .founder-image {
+            flex: 0 0 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+        
+        .founder-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .philosophy-section {
+            background: linear-gradient(to right, #f9f5e8, #f0e9d3);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .founder-image {
+                flex: 0 0 150px;
+                height: 150px;
+            }
+        }
+    </style> */ -->
 </head>
 <body>
 
     <!-- Header -->
     <header id="main-header"></header>
-    <main class="main-content">
     
-    <img src="./pic 8.png"  style="width: 30%; display: block; margin: 20px auto;">
-       
-        <div class="section-title">
-            <h2>丹心雲壇介紹</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>我們的宗旨: 以道淨化心靈</h2>
+            <p>傳承道教智慧，引領身心靈的和諧與平衡</p>
         </div>
-
+    </section>
     
-                   <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">   
+    <main class="main-content">
+        <!-- Logo -->
+        <!-- <img src="./pic 8.png" style="width: 30%; display: block; margin: 20px auto;"> -->
+        
+        <!-- 丹心雲壇介紹 -->
+        <section class="intro-section">
+            <div class="section-title">
+                <h2>雲壇介紹</h2>
+            </div>
+            
+            <div class="intro-cards">
+                <div class="intro-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>歷史淵源</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>雲壇，源自「丹心宗壇」，自創立以來，一直致力於道教文化的傳承、推廣與生活應用，旨在為大眾提供一個認識與體驗道家智慧的平台，讓古老的道教思想與現代生活相融合。</p>
+                    </div>
+                </div>
+                
+                <div class="intro-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <h3>師承淵源</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>本壇師承李遊坤正一道長，李道長有超過30年修行經驗，秉持正一道傳統，以深厚的修行與豐富的經驗，引導大眾深入道教文化精髓，並將道家智慧應用於日常之中，促進身心靈的和諧與平衡。</p>
+                    </div>
+                </div>
+                
+                <div class="intro-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>服務宗旨</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>雲壇提供宗教治療服務，針對人生中的各種困境與厄運，通過道教儀式與方法，進行解厄解困，幫助大眾渡過難關，淨化心靈，重拾安定與信心。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 創辦人介紹 -->
+            <!-- <div class="founder-section">
+                <div class="founder-image">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="founder-content">
+                    <h3>李遊坤正一道長</h3>
+                    <p>李道長擁有超過30年的修行經驗，秉持正一道傳統，以深厚的修行與豐富的經驗，引導信眾深入道教文化精髓。他致力於將道家智慧應用於日常生活，幫助信眾實現身心靈的和諧與平衡。</p>
+                </div>
+            </div> -->
+            
+            <!-- 核心理念
+            <div class="philosophy-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">核心理念</h3>
+                <p>我們強調正向引導，不僅解決當下問題，更注重心靈的啟發與提升，助人走出迷茫，找到人生的方向與力量。我們的理念是協助大眾從依靠外力（如法事、儀軌）的輔助，逐步轉向內力自修，通過學習道家養生、靜坐、經典研讀等方法，培養自身的能量與智慧，達到自我成長與超越，最終實現身心自在、安頓生命。</p>
+            </div> -->
+ 
+             <!-- 重新设计的核心理念部分 -->
+           <div class="philosophy-section">
+                <h2 class="philosophy-title">核心理念</h2>
+                <div class="philosophy-content">
+                    <p style="text-align: center; font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;color:#333;">
+                        我們強調正向引導，不僅解決當下問題，更注重心靈的啟發與提升，助人走出迷茫，找到人生的方向與力量。
+                    </p>
+                    
+                    <div class="philosophy-points">
+                        <div class="philosophy-point">
+                            <div class="point-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="point-title">由外轉內</div>
+                            <p>從依靠外力（如法事、儀軌）的輔助，逐步轉向內力自修</p>
+                        </div>
+                        
+                        <div class="philosophy-point">
+                            <div class="point-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="point-title">自我成長</div>
+                            <p>通過學習道家養生、靜坐、經典研讀等方法，培養自身的能量與智慧，達到自我成長與超越</p>
+                        </div>
+                        
+                        <div class="philosophy-point">
+                            <div class="point-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <div class="point-title">身心自在</div>
+                            <p>實現身心自在、安頓生命的最終目標</p>
+                        </div>
+                    </div>
 
-丹心雲壇，源自「丹心宗壇」，自1985年創立以來，一直致力於道教文化的傳承、推廣與生活應用，旨在為大眾提供一個認識與體驗道家智慧的平台，讓古老的道教思想與現代生活相融合。
+                </div>
+            </div>
 
-本壇師承李遊坤正一道長，李道長有超過30年修行經驗，秉持正一道傳統，以深厚的修行與豐富的經驗，引導信眾深入道教文化精髓，並將道家智慧應用於日常之中，促進身心靈的和諧與平衡。
-
-丹心雲壇提供宗教治療服務，針對人生中的各種困境與厄運，通過道教儀式與方法，進行解厄解困，幫助信眾渡過難關，重拾安定與信心。我們強調正向引導，不僅解決當下問題，更注重心靈的啟發與提升，助人走出迷茫，找到人生的方向與力量。
-
-我們的理念是協助信眾從依靠外力（如法事、儀軌）的輔助，逐步轉向內力自修，通過學習道家養生、靜坐、經典研讀等方法，培養自身的能量與智慧，達到自我成長與超越，最終實現身心自在、安頓生命。
-
-丹心雲壇不僅是一個宗教場所，更是一個推動文化傳承與心靈提升的開放平台，歡迎所有對道教文化感興趣的人士一同參與、學習與交流。</p>
-
-<br><br><br><br><br><br>
-</main>
-</body>
+            <!-- 服務項目 -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 1.5rem;">我們的服務</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-pray"></i>
+                        </div>
+                        <h4>宗教治療</h4>
+                        <p>針對人生困境與厄運，提供道教儀式與方法進行解厄解困</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>經典研讀</h4>
+                        <p>引導大眾學習道家經典，深入理解道教哲學精髓</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>道家養生</h4>
+                        <p>傳授道家養生方法，促進身心健康與平衡</p>
+                    </div>
+                    
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>共修交流</h4>
+                        <p>提供開放平台，促進大眾共修與交流</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 結語 -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);">
+                <h3 style="color: var(--primary-color); margin-bottom: 1rem;">歡迎參與</h3>
+                <p>雲壇不僅提供道教儀式，更是一個推動文化傳承與心靈提升的開放平台，歡迎所有對道教哲學感興趣的人士一同參與、學習與共修。</p>
+            </div>
+        </section>
+        
+        <br><br><br>
+    </main>
 
     <!-- Footer -->
     <footer id="main-footer"></footer>

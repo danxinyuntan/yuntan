@@ -491,6 +491,223 @@ nav li:hover .dropdown {
             margin-left: auto;
         }
 
+
+        .intro-section {
+            padding: 3rem 0;
+        }
+        
+        .intro-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .intro-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .intro-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .card-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .history-timeline {
+            margin-top: 3rem;
+        }
+        
+        .founder-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .founder-image {
+            flex: 0 0 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary-color);
+        }
+        
+        .founder-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* 核心理念部分 */
+        .philosophy-section {
+            background: linear-gradient(135deg, #f9f5e8, #f0e9d3 100%);
+            border-left: 4px solid var(--secondary-color);
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            border-radius: 12px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            /* box-shadow: 0 10px 30px rgba(142, 0, 0, 0.3); */
+        }
+        
+        .philosophy-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+           
+            background-size: 200px;
+            opacity: 0.3;
+        }
+        
+        .philosophy-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+            position: relative;
+        }
+        
+        .philosophy-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .philosophy-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .philosophy-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .philosophy-point {
+            background: linear-gradient(135deg, #8e0000 0%, #6a0000 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        /* .philosophy-point:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        } */
+        
+        .point-icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .point-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.8rem;
+            color: rgb(255, 255, 255);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .founder-image {
+                flex: 0 0 150px;
+                height: 150px;
+            }
+            
+            .philosophy-section {
+                padding: 2rem 1rem;
+            }
+            
+            .philosophy-title {
+                font-size: 1.8rem;
+            }
+        }
+
 /* Footer */
 footer {
     background-color: var(--dark-color);
