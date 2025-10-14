@@ -841,24 +841,38 @@ footer {
 
 
 
-        nav li.has-dropdown {
+    nav li:has(ul.dropdown) {
         position: relative;
     }
     
-    nav li.has-dropdown > a::after {
+    nav li:has(ul.dropdown) > a::after {
         content: '+';
         margin-left: 8px;
         font-weight: normal;
         transition: transform 0.3s ease;
     }
     
-    nav li.has-dropdown.active > a::after {
+    nav li:has(ul.dropdown).active > a::after {
         content: '-';
     }
     
     .dropdown.active {
         display: block !important;
+        position: static !important;
+        margin-left: 0 !important;
+        box-shadow: none;
+        border-top: none;
     }
+    
+    .dropdown.active li {
+        border-bottom: 1px solid #eee;
+    }
+    
+    .dropdown.active a {
+        color: var(--dark-color) !important;
+        padding-left: 2rem;
+    }
+
 
 
 
