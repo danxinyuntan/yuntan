@@ -828,12 +828,14 @@ footer {
     .dropdown {
         position: static;
         width: 100%;
-        display: none;
+        /* display: none; */
+        position: relative;
         margin-left: 1rem;
     }
     
     nav li:hover .dropdown {
-        display: none;
+        /* display: none; */
+        position: relative;
     }
     
     .mobile-menu-btn {
