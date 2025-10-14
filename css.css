@@ -837,6 +837,33 @@ footer {
         display: none;
     }
     
+
+
+
+
+        nav li.has-dropdown {
+        position: relative;
+    }
+    
+    nav li.has-dropdown > a::after {
+        content: '+';
+        margin-left: 8px;
+        font-weight: normal;
+        transition: transform 0.3s ease;
+    }
+    
+    nav li.has-dropdown.active > a::after {
+        content: '-';
+    }
+    
+    .dropdown.active {
+        display: block !important;
+    }
+
+
+
+
+    
     .mobile-menu-btn {
         display: block;
         position: absolute;
