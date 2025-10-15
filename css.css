@@ -481,9 +481,11 @@ nav li:hover .dropdown {
             margin-top: 1rem;
             background: #f9f9f9;
             border-radius: 4px;
+           
         }
         .show-detail {
             display: block;
+             text-align: justify;
         }
         .detail-toggle {
             color: var(--primary-color);
