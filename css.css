@@ -328,6 +328,7 @@ nav li:hover .dropdown {
 .card-content p {
     margin-bottom: 1rem;
     color: #666;
+    text-align: justify;
 }
 
 /* principle */
@@ -673,7 +674,7 @@ nav li:hover .dropdown {
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-            text-align: center;
+            text-align: justify;
             transition: all 0.3s ease;
         }
         
